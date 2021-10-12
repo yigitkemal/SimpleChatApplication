@@ -1,4 +1,4 @@
-package com.example.simplechatapplication;
+package com.example.simplechatapplication.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

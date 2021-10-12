@@ -1,4 +1,4 @@
-package com.example.simplechatapplication;
+package com.example.simplechatapplication.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.simplechatapplication.R;
 import com.example.simplechatapplication.databinding.ActivityHomeBinding;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -49,5 +50,9 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void sendMessage(View view){
+
     }
 }
