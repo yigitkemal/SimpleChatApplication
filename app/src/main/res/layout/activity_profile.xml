@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".view.ProfileActivity">
 
+    <ImageView
+        android:id="@+id/imageview_profile"
+        android:layout_width="164dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="72dp"
+        android:onClick="selectPicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select_photo" />
+
+    <EditText
+        android:id="@+id/edittext_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Your Age.."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_profile" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="upload"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="@+id/edittext_age"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_age" />
 </androidx.constraintlayout.widget.ConstraintLayout>
