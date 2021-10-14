@@ -24,6 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
+import com.onesignal.OneSignal;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,6 +41,8 @@ public class HomeActivity extends AppCompatActivity {
     HomeRecyclerviewAdapter homeRecyclerviewAdapter;
 
     private ArrayList<String> chatMessages = new ArrayList<>();
+
+    private static final String ONESIGNAL_APP_ID = "7e777d90-968d-4237-948f-195709804a6a";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,12 @@ public class HomeActivity extends AppCompatActivity {
         databaseReference = database.getReference();
 
         getData();
+
+
+        OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE,OneSignal.LOG_LEVEL.NONE);
+
+        OneSignal.initWithContext(this);
+        OneSignal.setAppId(ONESIGNAL_APP_ID);
 
     }
 

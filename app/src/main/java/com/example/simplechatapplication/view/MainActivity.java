@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.onesignal.OneSignal;
 
 import static android.content.ContentValues.TAG;
 
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(view);
 
         mAuth = FirebaseAuth.getInstance();
-
     }
 
     @Override
